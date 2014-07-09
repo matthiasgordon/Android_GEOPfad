@@ -22,6 +22,7 @@ public final class R {
         public static final int fragment_b=0x7f030002;
     }
     public static final class string {
+        public static final int Jetzt läuft mal alles=0x7f040005;
         public static final int KKK=0x7f040004;
         public static final int Popel=0x7f040003;
         public static final int app_name=0x7f040000;
