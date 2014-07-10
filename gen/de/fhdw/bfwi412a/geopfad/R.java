@@ -24,6 +24,7 @@ public final class R {
     public static final class string {
         public static final int KKK=0x7f040004;
         public static final int Klappt=0x7f040005;
+        public static final int Klappt1=0x7f040006;
         public static final int Popel=0x7f040003;
         public static final int app_name=0x7f040000;
         public static final int hello_world=0x7f040001;
