@@ -19,7 +19,7 @@ public class ActivityLocations extends Activity {
 	}
 
 	private void initGUI () {
-		
+		setContentView(R.layout.activity_locations);
 	}
 	
 	private void initApplicationLogic () {
