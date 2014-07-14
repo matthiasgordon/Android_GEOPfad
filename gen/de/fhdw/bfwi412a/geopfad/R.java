@@ -8,6 +8,9 @@
 package de.fhdw.bfwi412a.geopfad;
 
 public final class R {
+    public static final class array {
+        public static final int dataelements=0x7f090000;
+    }
     public static final class attr {
         /** 
     The size of the ad. It must be one of BANNER, FULL_BANNER, LEADERBOARD,
@@ -406,6 +409,7 @@ containing a value of this type.
         public static final int holo_dark=0x7f070005;
         public static final int holo_light=0x7f070006;
         public static final int hybrid=0x7f070004;
+        public static final int listViewMain=0x7f070017;
         public static final int map=0x7f070016;
         public static final int match_parent=0x7f07000c;
         public static final int monochrome=0x7f070013;
@@ -426,8 +430,9 @@ containing a value of this type.
     public static final class layout {
         public static final int activity_locations=0x7f030000;
         public static final int activity_main=0x7f030001;
-        public static final int fragment_a=0x7f030002;
-        public static final int fragment_b=0x7f030003;
+        public static final int da_item=0x7f030002;
+        public static final int fragment_a=0x7f030003;
+        public static final int fragment_b=0x7f030004;
     }
     public static final class string {
         public static final int KKK=0x7f050024;

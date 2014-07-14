@@ -1,3 +1,4 @@
+int array dataelements 0x7f090000
 int attr adSize 0x7f010000
 int attr adSizes 0x7f010001
 int attr adUnitId 0x7f010002
@@ -98,6 +99,7 @@ int id grayscale 0x7f070012
 int id holo_dark 0x7f070005
 int id holo_light 0x7f070006
 int id hybrid 0x7f070004
+int id listViewMain 0x7f070017
 int id map 0x7f070016
 int id match_parent 0x7f07000c
 int id monochrome 0x7f070013
@@ -114,8 +116,9 @@ int id wrap_content 0x7f07000d
 int integer google_play_services_version 0x7f080000
 int layout activity_locations 0x7f030000
 int layout activity_main 0x7f030001
-int layout fragment_a 0x7f030002
-int layout fragment_b 0x7f030003
+int layout da_item 0x7f030002
+int layout fragment_a 0x7f030003
+int layout fragment_b 0x7f030004
 int string KKK 0x7f050024
 int string Klappt 0x7f050025
 int string Klappt1 0x7f050026
