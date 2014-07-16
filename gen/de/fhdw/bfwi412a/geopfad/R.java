@@ -365,6 +365,9 @@ containing a value of this type.
         public static final int wallet_primary_text_holo_light=0x7f060019;
         public static final int wallet_secondary_text_holo_dark=0x7f06001a;
     }
+    public static final class dimen {
+        public static final int margin=0x7f0a0000;
+    }
     public static final class drawable {
         public static final int common_signin_btn_icon_dark=0x7f020000;
         public static final int common_signin_btn_icon_disabled_dark=0x7f020001;
@@ -409,19 +412,22 @@ containing a value of this type.
         public static final int holo_dark=0x7f070005;
         public static final int holo_light=0x7f070006;
         public static final int hybrid=0x7f070004;
-        public static final int listViewMain=0x7f070017;
-        public static final int map=0x7f070016;
+        public static final int imageView1=0x7f070016;
+        public static final int listViewMain=0x7f07001a;
+        public static final int map=0x7f070019;
         public static final int match_parent=0x7f07000c;
         public static final int monochrome=0x7f070013;
         public static final int none=0x7f070000;
         public static final int normal=0x7f070001;
-        public static final int pager=0x7f070015;
+        public static final int pager=0x7f070018;
         public static final int production=0x7f070007;
         public static final int sandbox=0x7f070008;
         public static final int satellite=0x7f070002;
         public static final int selectionDetails=0x7f07000b;
         public static final int strict_sandbox=0x7f070009;
         public static final int terrain=0x7f070003;
+        public static final int textView1=0x7f070015;
+        public static final int textView2=0x7f070017;
         public static final int wrap_content=0x7f07000d;
     }
     public static final class integer {
@@ -429,19 +435,22 @@ containing a value of this type.
     }
     public static final class layout {
         public static final int activity_locations=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int da_item=0x7f030002;
-        public static final int fragment_a=0x7f030003;
-        public static final int fragment_b=0x7f030004;
+        public static final int activity_locations2=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int da_item=0x7f030003;
+        public static final int fragment_a=0x7f030004;
+        public static final int fragment_b=0x7f030005;
     }
     public static final class string {
         public static final int KKK=0x7f050024;
         public static final int Klappt=0x7f050025;
         public static final int Klappt1=0x7f050026;
-        public static final int LetzterTestMarc=0x7f05002a;
+        public static final int LetzterTestMarc=0x7f05002b;
+        public static final int LocationName=0x7f050027;
+        public static final int LocationText=0x7f050028;
         public static final int Popel=0x7f050023;
-        public static final int Test=0x7f050029;
-        public static final int Test1=0x7f050028;
+        public static final int Test=0x7f05002a;
+        public static final int Test1=0x7f050029;
         public static final int app_name=0x7f050020;
         public static final int auth_client_needs_enabling_title=0x7f050001;
         public static final int auth_client_needs_installation_title=0x7f050002;
@@ -544,7 +553,6 @@ containing a value of this type.
          available or up-to-date 
          */
         public static final int wallet_buy_button_place_holder=0x7f05001f;
-        public static final int zweiterVersuch=0x7f050027;
     }
     public static final class style {
         /** 
