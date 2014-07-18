@@ -38,6 +38,6 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:src="@drawable/Unbenannt" />
+        android:src="@drawable/berg" />
     
 </RelativeLayout>
