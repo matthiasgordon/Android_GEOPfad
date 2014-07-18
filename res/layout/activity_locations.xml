@@ -11,14 +11,14 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imageView1"
         android:layout_alignParentTop="true"
-        android:text="@string/Popel" />
+        android:text="@string/NavigationLocation" />
     
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button1"
-        android:layout_alignR="@+id/button1"
+        android:layout_alignRight="@+id/button1"
         android:layout_below="@+id/button1"
         android:layout_marginTop="28dp"
         android:text="@string/LocationName" />
