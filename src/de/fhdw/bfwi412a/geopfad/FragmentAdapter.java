@@ -16,7 +16,7 @@ class MyAdapter extends FragmentPagerAdapter
 		Fragment fragment=null;
 		if(arg0 == 0)
 		{
-			fragment=new FragmentA();
+			fragment=new MapFragment();
 		}
 		
 		if(arg0 == 1)

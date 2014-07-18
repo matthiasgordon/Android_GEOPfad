@@ -2,15 +2,12 @@
 <resources>
 
     <string name="app_name">Geo Pfad</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="profi">Ich bin Programmierer!</string>
     <string name="NavigationLocation">Navigation Starten</string>
-    <string name="KKK">Test</string>
-    <string name="Klappt">Klappt</string>
-    <string name="Klappt1">Klappt</string>
     <string name="LocationName">Buxdehudes eisenwerk 3.0</string>
     <string name="LocationText">Ich bin hier was am probieren aber scheiß will nicht funktionieren....ich muss das bild größer bekommen aber wenn ich es verändern will legt es sich hinter den text oder verrückt die anderen da sie in abhängigkeit zum bild stehen</string>
-    <string name="Test1">MarciBaby</string>
-    <string name="Test">Johanna</string>
-    <string name="LetzterTestMarc">Endlich ein eigener Laptop!!</string>
+    <string-array name="string_spinner">
+        <item>Alle Orte anzeigen</item>
+        <item>Nur besuchte Orte anzeigen</item>
+        <item>Nur unbesuchte Orte anzeigen</item>
+    </string-array>
 </resources>
