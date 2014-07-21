@@ -28,7 +28,7 @@ public class ActivityLocations extends Activity {
 	private void initGUI () {
 		setContentView(R.layout.activity_locations);
 		mGUI = new ActivityLocationsGUI(this);
-		mGUI.getTitle().setText(mData.getTitel());
+		mGUI.getTitle().setText(mData.getTitle());
 		mGUI.getImageUrl().setImageResource(this.getResources()
 				.getIdentifier(mData.getImageUrl(), "drawable", this.getPackageName())
 				);
