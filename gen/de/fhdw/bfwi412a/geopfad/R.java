@@ -418,7 +418,7 @@ containing a value of this type.
         public static final int holo_dark=0x7f080005;
         public static final int holo_light=0x7f080006;
         public static final int hybrid=0x7f080004;
-        public static final int imageView1=0x7f080015;
+        public static final int imageView1=0x7f080016;
         public static final int imgIcon=0x7f08001a;
         public static final int linearLayout1=0x7f08001d;
         public static final int listViewOrte=0x7f080019;
@@ -435,7 +435,7 @@ containing a value of this type.
         public static final int spinner1=0x7f08001e;
         public static final int strict_sandbox=0x7f080009;
         public static final int terrain=0x7f080003;
-        public static final int textView1=0x7f080016;
+        public static final int textView1=0x7f080015;
         public static final int textView2=0x7f080017;
         public static final int txtOrtName=0x7f08001b;
         public static final int wrap_content=0x7f08000d;

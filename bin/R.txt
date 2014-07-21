@@ -106,7 +106,7 @@ int id grayscale 0x7f080012
 int id holo_dark 0x7f080005
 int id holo_light 0x7f080006
 int id hybrid 0x7f080004
-int id imageView1 0x7f080015
+int id imageView1 0x7f080016
 int id imgIcon 0x7f08001a
 int id linearLayout1 0x7f08001d
 int id listViewOrte 0x7f080019
@@ -123,7 +123,7 @@ int id selectionDetails 0x7f08000b
 int id spinner1 0x7f08001e
 int id strict_sandbox 0x7f080009
 int id terrain 0x7f080003
-int id textView1 0x7f080016
+int id textView1 0x7f080015
 int id textView2 0x7f080017
 int id txtOrtName 0x7f08001b
 int id wrap_content 0x7f08000d

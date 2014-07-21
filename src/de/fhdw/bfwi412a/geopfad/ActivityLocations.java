@@ -32,6 +32,7 @@ public class ActivityLocations extends Activity {
 		mGUI.getImageUrl().setImageResource(this.getResources()
 				.getIdentifier(mData.getImageUrl(), "drawable", this.getPackageName())
 				);
+		mGUI.getAbout().setText(mData.getAbout());
 	}
 	
 	private void initApplicationLogic () {
