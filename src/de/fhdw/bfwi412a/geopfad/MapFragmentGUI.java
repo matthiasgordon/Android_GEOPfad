@@ -41,13 +41,14 @@ public class MapFragmentGUI {
 		return mSpinner;
 	}
 
-	public void styleMap(List <LatLng> mRouteCoordinates, List <LatLng> mMarkerCoordinates){
+	public void styleMap(List <LatLng> mRouteCoordinates, List <Ort> mOrte){
 		if(mMap != null){
 			mMap.addPolyline(new PolylineOptions()
 			.addAll(mRouteCoordinates)
 			.width(8));
-			for (LatLng mCoordinate : mMarkerCoordinates){
-				mMap.addMarker(new MarkerOptions().position(mCoordinate).title("Mitte der Karte!"));	
+			for (Ort curOrt : mOrte){
+				mMap.addMarker(new MarkerOptions().position(new LatLng(curOrt.getLat(), curOrt.getLng()))
+						.title(curOrt.getName()));	
 			}
 			mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(50.99876752, 7.14546919), 14));
 			mMap.setMyLocationEnabled(true);

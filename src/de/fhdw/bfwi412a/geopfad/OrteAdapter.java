@@ -1,5 +1,4 @@
 package de.fhdw.bfwi412a.geopfad;
-
 import java.util.List;
 
 import android.app.Activity;
@@ -73,4 +72,3 @@ public class OrteAdapter extends ArrayAdapter<Ort> {
 		
 
 }
-

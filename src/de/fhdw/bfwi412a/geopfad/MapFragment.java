@@ -1,7 +1,6 @@
 package de.fhdw.bfwi412a.geopfad;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,23 +27,13 @@ public class MapFragment extends Fragment {
 	}	
 
 	
-	@Override
-	public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-		super.onActivityCreated(savedInstanceState);
-//		initData();
-//		initGUI();
-//		initApplicationLogic();
-//		initEventToListenerMapping();
-//	
-	}
-	
 	private void initData () {
-		mData = new MapFragmentData();
+		mData = new MapFragmentData(this);
 	}
 
 	private void initGUI (View view) {
 		mGUI = new MapFragmentGUI(this, view);
-		mGUI.styleMap(mData.getRouteCoordinates(), mData.getMarkerCoordinates());
+		mGUI.styleMap(mData.getRouteCoordinates(), mData.getOrte());
 	}
 	
 	private void initApplicationLogic () {
@@ -52,6 +41,6 @@ public class MapFragment extends Fragment {
 	}
 	
 	private void initEventToListenerMapping () {
-//		new MapFragmentEventToListener(mApplicationLogic, mGUI);
+		new MapFragmentEventToListener(mGUI, mApplicationLogic);
 	}
 }

@@ -32,7 +32,7 @@ public class FragmentB extends Fragment {
 		View view = inflater.inflate(R.layout.fragment_b, container, false);
 		
 		listOrte = (ListView) view.findViewById(R.id.listViewOrte);
-	    orte = Orte_DOM_Parser.getOrteFromFile(view.getContext());
+	    orte = Orte_DOM_Parser.getOrteFromFile(this.getActivity());
 	        
 	    ortAdapter = new OrteAdapter(view.getContext(), R.layout.list_item, orte);
 	    listOrte.setAdapter(ortAdapter);

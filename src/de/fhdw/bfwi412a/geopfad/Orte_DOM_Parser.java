@@ -2,8 +2,6 @@ package de.fhdw.bfwi412a.geopfad;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,6 +65,9 @@ public class Orte_DOM_Parser {
 		        		Element title = (Element) entry.getElementsByTagName("name").item(0);
 		        		Element image = (Element) entry.getElementsByTagName("image").item(0);
 		        		Element about = (Element) entry.getElementsByTagName("about").item(0);
+		        		Element link = (Element) entry.getElementsByTagName("link").item(0);
+		        		Element latitude = (Element) entry.getElementsByTagName("latitude").item(0);
+		        		Element longitude = (Element) entry.getElementsByTagName("longitude").item(0);
 		        		
 		        		//add both new TextView and LinearLayout
 			        	curOrt.setName(title.getFirstChild().getNodeValue());	//layout.addView(tv_title);
@@ -75,6 +76,9 @@ public class Orte_DOM_Parser {
 			        	curOrt.setImgUrl(imageName);	
 		        		
 			        	curOrt.setAbout(about.getFirstChild().getNodeValue());
+			        	curOrt.setLink(link.getFirstChild().getNodeValue());
+			        	curOrt.setLat(Double.parseDouble(latitude.getFirstChild().getNodeValue()));
+			        	curOrt.setLng(Double.parseDouble(longitude.getFirstChild().getNodeValue()));
 			        	
 			        	listOrte.add(curOrt);
 		        	
@@ -96,19 +100,19 @@ public class Orte_DOM_Parser {
    }  
     
     
-	public static InputStream getInputStreamFromURL(String urlString){
-		InputStream in = null;    
-        URL url = null;
-		
-        try {
-			url = new URL(urlString);
-			in = url.openStream();
-		} catch (MalformedURLException e1) {
-			e1.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		return in;
-	}
+//	public static InputStream getInputStreamFromURL(String urlString){
+//		InputStream in = null;    
+//        URL url = null;
+//		
+//        try {
+//			url = new URL(urlString);
+//			in = url.openStream();
+//		} catch (MalformedURLException e1) {
+//			e1.printStackTrace();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//		
+//		return in;
+//	}
 }

@@ -4,9 +4,11 @@ package de.fhdw.bfwi412a.geopfad;
 
 public class Ort {
 	private String name;
-	private String link;
 	private String imgUrl;
 	private String about;
+	private String link;	
+	private double latitude;
+	private double longitude;
 	
 	public String getName() {
 		return name;
@@ -25,6 +27,18 @@ public class Ort {
 	}
 	public void setAbout(String about) {
 		this.about = about;
+	}
+	public double getLat() {
+		return latitude;
+	}
+	public void setLat(double latitude) {
+		this.latitude = latitude;
+	}
+	public double getLng() {
+		return longitude;
+	}
+	public void setLng(double longitude) {
+		this.longitude = longitude;
 	}
 	public String getLink() {
 		return link;
