@@ -10,4 +10,5 @@
         <item>Nur besuchte Orte anzeigen</item>
         <item>Nur unbesuchte Orte anzeigen</item>
     </string-array>
+    <string name="activity_location">ActivityLocation</string>
 </resources>

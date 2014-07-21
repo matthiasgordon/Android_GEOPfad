@@ -23,4 +23,11 @@
         
     </string-array>
     
+    <string-array name="OttoPlatz">
+        
+        <item name="Anschrift">Otto-Platz 5</item>
+        <item name="Bild">@drawable/ottoplatz</item>
+        
+    </string-array>
+    
 </resources>
