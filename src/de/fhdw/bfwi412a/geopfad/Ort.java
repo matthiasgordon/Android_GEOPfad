@@ -9,6 +9,7 @@ public class Ort {
 	private String link;	
 	private double latitude;
 	private double longitude;
+	private String visitKey;
 	
 	public String getName() {
 		return name;
@@ -46,6 +47,12 @@ public class Ort {
 	public void setLink(String link) {
 		this.link = link;
 	}
-
+	public String getVisitKey() {
+		return visitKey;
+	}
+	public void setVisitKey(String visitKey) {
+		this.visitKey = visitKey;
+	}
+	
 
 }

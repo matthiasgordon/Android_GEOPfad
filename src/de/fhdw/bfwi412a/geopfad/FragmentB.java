@@ -48,7 +48,7 @@ public class FragmentB extends Fragment {
 				String about = orte.get(position).getAbout();
 				double latitude = orte.get(position).getLat();
 				double longitude = orte.get(position).getLng();
-				
+				String visitKey = orte.get(position).getVisitKey();
 				/*Wenn ein Ort des ListViews angetippt wird, führt dies zur ActivityLocation*/
 				Intent newActivity = new Intent(getActivity(), ActivityLocations.class);
 				newActivity.putExtra("Ortname", ortName);
@@ -56,6 +56,7 @@ public class FragmentB extends Fragment {
 				newActivity.putExtra("about", about);
 				newActivity.putExtra("latitude", latitude);
 				newActivity.putExtra("longitude", longitude);
+				newActivity.putExtra("visitKey", visitKey);
 			
 				startActivity(newActivity);
 				

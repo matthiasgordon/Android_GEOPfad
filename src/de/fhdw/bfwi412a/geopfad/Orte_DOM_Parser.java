@@ -68,6 +68,7 @@ public class Orte_DOM_Parser {
 		        		Element link = (Element) entry.getElementsByTagName("link").item(0);
 		        		Element latitude = (Element) entry.getElementsByTagName("latitude").item(0);
 		        		Element longitude = (Element) entry.getElementsByTagName("longitude").item(0);
+		        		Element visitKey = (Element) entry.getElementsByTagName("visitKey").item(0);
 		        		
 		        		//add both new TextView and LinearLayout
 			        	curOrt.setName(title.getFirstChild().getNodeValue());	//layout.addView(tv_title);
@@ -79,6 +80,7 @@ public class Orte_DOM_Parser {
 			        	curOrt.setLink(link.getFirstChild().getNodeValue());
 			        	curOrt.setLat(Double.parseDouble(latitude.getFirstChild().getNodeValue()));
 			        	curOrt.setLng(Double.parseDouble(longitude.getFirstChild().getNodeValue()));
+			        	curOrt.setVisitKey(visitKey.getFirstChild().getNodeValue());
 			        	
 			        	listOrte.add(curOrt);
 		        	
