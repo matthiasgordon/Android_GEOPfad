@@ -9,6 +9,7 @@ public class ActivityLocationsData {
 	String mTitle;
 	String mImageUrl;
 	String mAbout;
+	final String mVisitKey;
 	
 	public ActivityLocationsData(ActivityLocations actLocations) {
 		mActivity = actLocations;
@@ -16,6 +17,7 @@ public class ActivityLocationsData {
 		mTitle = mOrtInfo.getString("Ortname");
 		mImageUrl = mOrtInfo.getString("imageUrl");
 		mAbout = mOrtInfo.getString("about");
+		mVisitKey = mOrtInfo.getString("visitKey");
 	}
 
 	public ActivityLocations getActivity() {
@@ -56,5 +58,9 @@ public class ActivityLocationsData {
 
 	public void setAbout(String mAbout) {
 		this.mAbout = mAbout;
+	}
+	
+	public String getVisitKey() {
+		return mVisitKey;
 	}
 }

@@ -409,6 +409,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int book_now=0x7f080010;
+        public static final int btnVisit=0x7f08001b;
         public static final int button1=0x7f080014;
         public static final int buyButton=0x7f08000a;
         public static final int buy_now=0x7f08000f;
@@ -418,26 +419,29 @@ containing a value of this type.
         public static final int holo_dark=0x7f080005;
         public static final int holo_light=0x7f080006;
         public static final int hybrid=0x7f080004;
-        public static final int imageView1=0x7f080016;
-        public static final int imgIcon=0x7f08001a;
-        public static final int linearLayout1=0x7f08001d;
-        public static final int listViewOrte=0x7f080019;
-        public static final int map=0x7f08001c;
+        public static final int imageView1=0x7f080017;
+        public static final int imgIcon=0x7f08001e;
+        public static final int linearLayout1=0x7f080021;
+        public static final int listViewOrte=0x7f08001d;
+        public static final int lnlVisit=0x7f080016;
+        public static final int map=0x7f080020;
         public static final int match_parent=0x7f08000c;
         public static final int monochrome=0x7f080013;
         public static final int none=0x7f080000;
         public static final int normal=0x7f080001;
-        public static final int pager=0x7f080018;
+        public static final int pager=0x7f08001c;
         public static final int production=0x7f080007;
         public static final int sandbox=0x7f080008;
         public static final int satellite=0x7f080002;
         public static final int selectionDetails=0x7f08000b;
-        public static final int spinner1=0x7f08001e;
+        public static final int spinner1=0x7f080022;
         public static final int strict_sandbox=0x7f080009;
         public static final int terrain=0x7f080003;
         public static final int textView1=0x7f080015;
-        public static final int textView2=0x7f080017;
-        public static final int txtOrtName=0x7f08001b;
+        public static final int textView2=0x7f080018;
+        public static final int txtOrtName=0x7f08001f;
+        public static final int txtVisitStatus=0x7f08001a;
+        public static final int txtVisitText=0x7f080019;
         public static final int wrap_content=0x7f08000d;
     }
     public static final class integer {

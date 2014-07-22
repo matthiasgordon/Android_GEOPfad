@@ -1,5 +1,6 @@
 package de.fhdw.bfwi412a.geopfad;
 
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -9,12 +10,18 @@ public class ActivityLocationsGUI {
 	TextView mTitle;
 	TextView mAbout;
 	ImageView mImageUrl;
+	TextView mVisitText;
+	TextView mVisitStatus;
+	Button mBtnVisit;
 
 	public ActivityLocationsGUI(ActivityLocations actloc) {
 		mActLoc = actloc;
 		mTitle = (TextView) mActLoc.findViewById(R.id.textView1);
 		mAbout = (TextView) mActLoc.findViewById(R.id.textView2);
-		mImageUrl = (ImageView) mActLoc.findViewById(R.id.imageView1);	
+		mImageUrl = (ImageView) mActLoc.findViewById(R.id.imageView1);
+		mVisitText = (TextView) mActLoc.findViewById(R.id.txtVisitText);
+		mVisitStatus = (TextView) mActLoc.findViewById(R.id.txtVisitStatus);
+		mBtnVisit = (Button) mActLoc.findViewById(R.id.btnVisit);
 	}
 
 	public ActivityLocations getActLoc() {
@@ -31,6 +38,18 @@ public class ActivityLocationsGUI {
 
 	public ImageView getImageUrl() {
 		return mImageUrl;
+	}
+	
+	public TextView getVisitText() {
+		return mVisitText;
+	}
+	
+	public TextView getVisitStatus() {
+		return mVisitStatus;
+	}
+	
+	public Button getBtnVisit(){
+		return mBtnVisit;
 	}
 	
 	
