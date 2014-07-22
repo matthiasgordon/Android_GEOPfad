@@ -46,12 +46,16 @@ public class FragmentB extends Fragment {
 				String ortName = orte.get(position).getName().toString();
 				String ortImage = orte.get(position).getImgUrl();
 				String about = orte.get(position).getAbout();
+				double latitude = orte.get(position).getLat();
+				double longitude = orte.get(position).getLng();
 				
 				/*Wenn ein Ort des ListViews angetippt wird, führt dies zur ActivityLocation*/
 				Intent newActivity = new Intent(getActivity(), ActivityLocations.class);
 				newActivity.putExtra("Ortname", ortName);
 				newActivity.putExtra("imageUrl", ortImage);
 				newActivity.putExtra("about", about);
+				newActivity.putExtra("latitude", latitude);
+				newActivity.putExtra("longitude", longitude);
 			
 				startActivity(newActivity);
 				

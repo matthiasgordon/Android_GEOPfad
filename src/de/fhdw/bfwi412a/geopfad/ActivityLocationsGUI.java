@@ -13,6 +13,7 @@ public class ActivityLocationsGUI {
 	TextView mVisitText;
 	TextView mVisitStatus;
 	Button mBtnVisit;
+	Button mBtnNavigation;
 
 	public ActivityLocationsGUI(ActivityLocations actloc) {
 		mActLoc = actloc;
@@ -22,6 +23,7 @@ public class ActivityLocationsGUI {
 		mVisitText = (TextView) mActLoc.findViewById(R.id.txtVisitText);
 		mVisitStatus = (TextView) mActLoc.findViewById(R.id.txtVisitStatus);
 		mBtnVisit = (Button) mActLoc.findViewById(R.id.btnVisit);
+		mBtnNavigation = (Button) mActLoc.findViewById(R.id.button1);
 	}
 
 	public ActivityLocations getActLoc() {
@@ -50,6 +52,10 @@ public class ActivityLocationsGUI {
 	
 	public Button getBtnVisit(){
 		return mBtnVisit;
+	}
+
+	public Button getBtnNavigation() {
+		return mBtnNavigation;
 	}
 	
 	

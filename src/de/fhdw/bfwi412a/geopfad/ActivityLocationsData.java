@@ -9,6 +9,8 @@ public class ActivityLocationsData {
 	String mTitle;
 	String mImageUrl;
 	String mAbout;
+	double mLatitude;
+	double mLongitude;
 	final String mVisitKey;
 	
 	public ActivityLocationsData(ActivityLocations actLocations) {
@@ -18,6 +20,8 @@ public class ActivityLocationsData {
 		mImageUrl = mOrtInfo.getString("imageUrl");
 		mAbout = mOrtInfo.getString("about");
 		mVisitKey = mOrtInfo.getString("visitKey");
+		mLatitude = mOrtInfo.getDouble("latitude");
+		mLongitude = mOrtInfo.getDouble("longitude");
 	}
 
 	public ActivityLocations getActivity() {
@@ -63,4 +67,21 @@ public class ActivityLocationsData {
 	public String getVisitKey() {
 		return mVisitKey;
 	}
+
+	public double getmLatitude() {
+		return mLatitude;
+	}
+
+	public void setmLatitude(double mLatitude) {
+		this.mLatitude = mLatitude;
+	}
+
+	public double getmLongitude() {
+		return mLongitude;
+	}
+
+	public void setmLongitude(double mLongitude) {
+		this.mLongitude = mLongitude;
+	}
+	
 }

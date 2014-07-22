@@ -13,6 +13,7 @@ public class ActivityLocations extends Activity {
 	public static final String PREFS_NAME = "MYPrefernceFile";
 	ActivityLocationsData mData;
 	ActivityLocationsGUI mGUI;
+	ActivityLocationsApplicationLogic mAppLogic;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -55,11 +56,11 @@ public class ActivityLocations extends Activity {
 	}
 	
 	private void initApplicationLogic () {
-		
+		mAppLogic = new ActivityLocationsApplicationLogic(this, mData, mGUI);
 	}
 	
 	private void initEventToListenerMapping () {
-		
+		new ActivityLocationsEventToListenerMapping(mGUI, mAppLogic);
 	}
 	
 	
