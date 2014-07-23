@@ -28,7 +28,7 @@ public class MapFragmentEventToListener implements OnItemSelectedListener, OnInf
 
 	@Override
 	public void onNothingSelected(AdapterView<?> arg0) {
-		mAppLogic.changeMarkers(1);
+		mAppLogic.changeMarkers(0);
 	}
 
 	@Override

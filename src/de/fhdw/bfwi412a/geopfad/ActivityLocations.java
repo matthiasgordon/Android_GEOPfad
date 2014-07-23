@@ -52,7 +52,7 @@ public class ActivityLocations extends Activity {
 		mGUI.getAbout().setText(mData.getAbout());
 		SharedPreferences visitStatus = getSharedPreferences(PREFS_NAME, 0);
 		mGUI.getVisitStatus().setText(visitStatus.getString(mData.mVisitKey, "Nein"));
-		
+		String status = visitStatus.getString(mData.getVisitKey(),"Test");
 	}
 	
 	private void initApplicationLogic () {

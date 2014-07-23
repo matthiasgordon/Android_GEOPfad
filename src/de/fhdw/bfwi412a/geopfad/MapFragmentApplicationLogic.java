@@ -15,7 +15,7 @@ public class MapFragmentApplicationLogic {
 	}
 	
 	public void changeMarkers(int id){
-//		mData.
+		mGUI.styleMap(mData.getRouteCoordinates(), mData.getOrte(), id, mData.getVisitStatus());
 	}
 	
 	public void onMarkerClicked(Marker mMarker){
@@ -25,6 +25,10 @@ public class MapFragmentApplicationLogic {
 				intent.putExtra("Ortname", curOrt.getName());
 				intent.putExtra("imageUrl", curOrt.getImgUrl());
 				intent.putExtra("about", curOrt.getAbout());
+				intent.putExtra("latitude", curOrt.getLat());
+				intent.putExtra("longitude", curOrt.getLng());
+				intent.putExtra("visitKey", curOrt.getVisitKey());
+				
 				mData.getActivity().startActivity(intent);
 			}
 		}

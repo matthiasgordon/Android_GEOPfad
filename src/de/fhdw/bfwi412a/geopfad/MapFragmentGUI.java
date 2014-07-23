@@ -2,6 +2,7 @@ package de.fhdw.bfwi412a.geopfad;
 
 import java.util.List;
 
+import android.content.SharedPreferences;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -41,18 +42,47 @@ public class MapFragmentGUI {
 		return mSpinner;
 	}
 
-	public void styleMap(List <LatLng> mRouteCoordinates, List <Ort> mOrte){
+	public void styleMap(List <LatLng> mRouteCoordinates, List <Ort> mOrte, 
+			int mMarkerId, SharedPreferences mVisitStatus){
 		if(mMap != null){
+			mMap.clear();
 			mMap.addPolyline(new PolylineOptions()
 			.addAll(mRouteCoordinates)
 			.width(8));
+			setupMarkers(mMarkerId, mOrte, mVisitStatus);
+			mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(50.99876752, 7.14546919), 14));
+			mMap.setMyLocationEnabled(true);
+		}
+	}
+	
+	public void setupMarkers(int mMarkerId, List <Ort> mOrte, 
+			SharedPreferences mVisitStatus){
+		switch(mMarkerId){
+		case 0:
 			for (Ort curOrt : mOrte){
 				mMap.addMarker(new MarkerOptions().position(new LatLng(curOrt.getLat(), curOrt.getLng()))
 						.title(curOrt.getName()));	
 			}
-			mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(50.99876752, 7.14546919), 14));
-			mMap.setMyLocationEnabled(true);
+			break;
+		case 1:
+			for (Ort curOrt : mOrte){
+				if(mVisitStatus.getString(curOrt.getVisitKey(), "nein").equals("ja")){
+				mMap.addMarker(new MarkerOptions().position(new LatLng(curOrt.getLat(), curOrt.getLng()))
+						.title(curOrt.getName()));
+				}
+			}
+			break;
+		case 2:
+			for (Ort curOrt : mOrte){
+				if(mVisitStatus.getString(curOrt.getVisitKey(), "nein").equals("nein")){
+				mMap.addMarker(new MarkerOptions().position(new LatLng(curOrt.getLat(), curOrt.getLng()))
+						.title(curOrt.getName()));
+				}
+			}
+			break;
 		}
+		
+		
 	}
 	
 }

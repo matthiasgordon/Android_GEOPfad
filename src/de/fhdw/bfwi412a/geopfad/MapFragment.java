@@ -26,6 +26,12 @@ public class MapFragment extends Fragment {
 		return mView;
 	}	
 
+	@Override
+	public void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		initGUI(getView());
+	}
 	
 	private void initData () {
 		mData = new MapFragmentData(this);
@@ -33,7 +39,7 @@ public class MapFragment extends Fragment {
 
 	private void initGUI (View view) {
 		mGUI = new MapFragmentGUI(this, view);
-		mGUI.styleMap(mData.getRouteCoordinates(), mData.getOrte());
+		mGUI.styleMap(mData.getRouteCoordinates(), mData.getOrte(), 0, mData.getVisitStatus());
 	}
 	
 	private void initApplicationLogic () {
