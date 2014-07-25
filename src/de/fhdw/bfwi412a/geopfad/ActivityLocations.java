@@ -2,10 +2,7 @@ package de.fhdw.bfwi412a.geopfad;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 public class ActivityLocations extends Activity {
 
@@ -44,8 +41,8 @@ public class ActivityLocations extends Activity {
 
 	private void initGUI () {
 		setContentView(R.layout.activity_locations);
-		mGUI = new ActivityLocationsGUI(this);
-		mGUI.getTitle().setText(mData.getTitle());
+		mGUI = new ActivityLocationsGUI(this, this);
+		mGUI.getActionBar().setTitle(mData.getTitle());
 		mGUI.getImageUrl().setImageResource(this.getResources()
 				.getIdentifier(mData.getImageUrl(), "drawable", this.getPackageName())
 				);

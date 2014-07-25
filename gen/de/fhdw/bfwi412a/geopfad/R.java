@@ -409,9 +409,8 @@ containing a value of this type.
     }
     public static final class id {
         public static final int book_now=0x7f090010;
-        public static final int btnNavigation=0x7f090014;
-        public static final int btnVisit=0x7f09001c;
-        public static final int button1=0x7f090019;
+        public static final int btnNavigation=0x7f09001a;
+        public static final int btnVisit=0x7f090019;
         public static final int buyButton=0x7f09000a;
         public static final int buy_now=0x7f09000f;
         public static final int buy_with_google=0x7f09000e;
@@ -420,29 +419,28 @@ containing a value of this type.
         public static final int holo_dark=0x7f090005;
         public static final int holo_light=0x7f090006;
         public static final int hybrid=0x7f090004;
-        public static final int imageView1=0x7f090017;
-        public static final int imgIcon=0x7f09001f;
-        public static final int linearLayout1=0x7f090022;
-        public static final int listViewOrte=0x7f09001e;
+        public static final int imageView1=0x7f090014;
+        public static final int imgIcon=0x7f09001d;
+        public static final int linearLayout1=0x7f090020;
+        public static final int listViewOrte=0x7f09001c;
         public static final int lnlVisit=0x7f090016;
-        public static final int map=0x7f090021;
+        public static final int map=0x7f09001f;
         public static final int match_parent=0x7f09000c;
         public static final int monochrome=0x7f090013;
         public static final int none=0x7f090000;
         public static final int normal=0x7f090001;
-        public static final int pager=0x7f09001d;
+        public static final int pager=0x7f09001b;
         public static final int production=0x7f090007;
         public static final int sandbox=0x7f090008;
         public static final int satellite=0x7f090002;
         public static final int selectionDetails=0x7f09000b;
-        public static final int spinner1=0x7f090023;
+        public static final int spinner1=0x7f090021;
         public static final int strict_sandbox=0x7f090009;
         public static final int terrain=0x7f090003;
-        public static final int textView1=0x7f090015;
-        public static final int textView2=0x7f090018;
-        public static final int txtOrtName=0x7f090020;
-        public static final int txtVisitStatus=0x7f09001b;
-        public static final int txtVisitText=0x7f09001a;
+        public static final int textView2=0x7f090015;
+        public static final int txtOrtName=0x7f09001e;
+        public static final int txtVisitStatus=0x7f090018;
+        public static final int txtVisitText=0x7f090017;
         public static final int wrap_content=0x7f09000d;
     }
     public static final class integer {
