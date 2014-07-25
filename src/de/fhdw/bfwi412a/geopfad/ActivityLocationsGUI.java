@@ -23,7 +23,7 @@ public class ActivityLocationsGUI {
 		mVisitText = (TextView) mActLoc.findViewById(R.id.txtVisitText);
 		mVisitStatus = (TextView) mActLoc.findViewById(R.id.txtVisitStatus);
 		mBtnVisit = (Button) mActLoc.findViewById(R.id.btnVisit);
-		mBtnNavigation = (Button) mActLoc.findViewById(R.id.button1);
+		mBtnNavigation = (Button) mActLoc.findViewById(R.id.btnNavigation);
 	}
 
 	public ActivityLocations getActLoc() {

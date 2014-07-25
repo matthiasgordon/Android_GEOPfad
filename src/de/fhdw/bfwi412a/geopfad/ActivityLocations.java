@@ -23,19 +23,19 @@ public class ActivityLocations extends Activity {
 		initApplicationLogic();
 		initEventToListenerMapping();
 
-		Button btnVisit = (Button) findViewById(R.id.btnVisit);
-		btnVisit.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				SharedPreferences visitStatus = getSharedPreferences(PREFS_NAME, 0);
-				SharedPreferences.Editor editor = visitStatus.edit();
-				editor.putString(mData.mVisitKey, "ja");
-				editor.commit();
-				mGUI.getVisitStatus().setText(visitStatus.getString(mData.mVisitKey, "Nein"));
-			}
-		});
+//		Button btnVisit = (Button) findViewById(R.id.btnVisit);
+//		btnVisit.setOnClickListener(new View.OnClickListener() {
+//			
+//			@Override
+//			public void onClick(View v) {
+//				// TODO Auto-generated method stub
+//				SharedPreferences visitStatus = getSharedPreferences(PREFS_NAME, 0);
+//				SharedPreferences.Editor editor = visitStatus.edit();
+//				editor.putString(mData.mVisitKey, "ja");
+//				editor.commit();
+//				mGUI.getVisitStatus().setText(visitStatus.getString(mData.mVisitKey, "Nein"));
+//			}
+//		});
 	}
 	
 	private void initData () {
@@ -50,9 +50,8 @@ public class ActivityLocations extends Activity {
 				.getIdentifier(mData.getImageUrl(), "drawable", this.getPackageName())
 				);
 		mGUI.getAbout().setText(mData.getAbout());
-		SharedPreferences visitStatus = getSharedPreferences(PREFS_NAME, 0);
-		mGUI.getVisitStatus().setText(visitStatus.getString(mData.mVisitKey, "Nein"));
-		String status = visitStatus.getString(mData.getVisitKey(),"Test");
+		mGUI.getVisitStatus().setText(mData.getVisitStatus()
+				.getString(mData.getVisitKey(), "Nein"));
 	}
 	
 	private void initApplicationLogic () {

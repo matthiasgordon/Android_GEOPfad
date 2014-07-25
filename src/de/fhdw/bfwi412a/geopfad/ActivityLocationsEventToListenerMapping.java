@@ -12,11 +12,19 @@ public class ActivityLocationsEventToListenerMapping implements OnClickListener 
 		mGUI = gui;
 		mAppLogic = appLogic;
 		mGUI.getBtnNavigation().setOnClickListener(this);
+		mGUI.getBtnVisit().setOnClickListener(this);
 	}
 	
 	@Override
 	public void onClick(View v) {
-		mAppLogic.navigateToLocation();
+		switch(v.getId()){
+		case R.id.btnNavigation:
+			mAppLogic.navigateToLocation();
+			break;
+		case R.id.btnVisit:
+			mAppLogic.changeVisitStatus();
+			break;
+		}
 	}
 
 }

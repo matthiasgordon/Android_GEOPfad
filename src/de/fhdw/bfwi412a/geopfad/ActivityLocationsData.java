@@ -1,8 +1,10 @@
 package de.fhdw.bfwi412a.geopfad;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 public class ActivityLocationsData {
+	public static final String PREFS_NAME = "MYPrefernceFile";
 	
 	ActivityLocations mActivity;
 	Bundle mOrtInfo;
@@ -12,6 +14,8 @@ public class ActivityLocationsData {
 	double mLatitude;
 	double mLongitude;
 	final String mVisitKey;
+	private SharedPreferences mVisitStatus;
+
 	
 	public ActivityLocationsData(ActivityLocations actLocations) {
 		mActivity = actLocations;
@@ -22,6 +26,7 @@ public class ActivityLocationsData {
 		mVisitKey = mOrtInfo.getString("visitKey");
 		mLatitude = mOrtInfo.getDouble("latitude");
 		mLongitude = mOrtInfo.getDouble("longitude");
+		mVisitStatus = mActivity.getSharedPreferences(PREFS_NAME, 0);
 	}
 
 	public ActivityLocations getActivity() {
@@ -68,20 +73,23 @@ public class ActivityLocationsData {
 		return mVisitKey;
 	}
 
-	public double getmLatitude() {
+	public double getLatitude() {
 		return mLatitude;
 	}
 
-	public void setmLatitude(double mLatitude) {
+	public void setLatitude(double mLatitude) {
 		this.mLatitude = mLatitude;
 	}
 
-	public double getmLongitude() {
+	public double getLongitude() {
 		return mLongitude;
 	}
 
-	public void setmLongitude(double mLongitude) {
+	public void setLongitude(double mLongitude) {
 		this.mLongitude = mLongitude;
 	}
-	
+
+	public SharedPreferences getVisitStatus() {
+		return mVisitStatus;
+	}	
 }
