@@ -15,9 +15,9 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class FragmentB extends Fragment {
+public class ListFragment extends Fragment {
 
-	public FragmentB () {
+	public ListFragment () {
 		
 	}
 	

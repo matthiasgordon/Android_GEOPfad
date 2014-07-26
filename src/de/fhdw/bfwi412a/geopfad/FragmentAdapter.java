@@ -21,7 +21,7 @@ class MyAdapter extends FragmentPagerAdapter
 		
 		if(arg0 == 1)
 		{
-			fragment=new FragmentB();
+			fragment=new ListFragment();
 		}
 		return fragment;
 	}

@@ -30,11 +30,11 @@ public class ActivityMainGUI implements TabListener {
 
 	private void addTabs (ActionBar actionBar) {
 		ActionBar.Tab tab1 = actionBar.newTab();
-		tab1.setText("Tab 1");
+		tab1.setText("Karte");
 		tab1.setTabListener(this);
 		
 		ActionBar.Tab tab2=actionBar.newTab();
-		tab2.setText("Tab 2");
+		tab2.setText("Liste");
 		tab2.setTabListener(this);
 		
 		actionBar.addTab(tab1);
