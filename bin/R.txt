@@ -134,7 +134,7 @@ int integer google_play_services_version 0x7f0a0000
 int layout activity_locations 0x7f030000
 int layout activity_main 0x7f030001
 int layout da_item 0x7f030002
-int layout fragment_b 0x7f030003
+int layout list_fragment 0x7f030003
 int layout list_item 0x7f030004
 int layout mapfragment 0x7f030005
 int raw orte 0x7f050000
