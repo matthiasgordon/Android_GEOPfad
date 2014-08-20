@@ -4,6 +4,8 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.ActionBar.TabListener;
 import android.app.FragmentTransaction;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.view.ViewPager;
 
 public class ActivityMainGUI implements TabListener {
@@ -17,6 +19,7 @@ public class ActivityMainGUI implements TabListener {
 		
 		actionBar = act.getActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+		actionBar.setStackedBackgroundDrawable(new ColorDrawable(Color.rgb(9, 121, 187)));
 		addTabs(actionBar);
 	}
 
