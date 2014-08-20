@@ -33,6 +33,7 @@ int attr uiZoomControls 0x7f01000d
 int attr uiZoomGestures 0x7f01000e
 int attr useViewLifecycle 0x7f01000f
 int attr zOrderOnTop 0x7f010010
+int color blue 0x7f080018
 int color common_action_bar_splitter 0x7f080009
 int color common_signin_btn_dark_text_default 0x7f080000
 int color common_signin_btn_dark_text_disabled 0x7f080002
@@ -43,8 +44,10 @@ int color common_signin_btn_light_text_default 0x7f080004
 int color common_signin_btn_light_text_disabled 0x7f080006
 int color common_signin_btn_light_text_focused 0x7f080007
 int color common_signin_btn_light_text_pressed 0x7f080005
-int color common_signin_btn_text_dark 0x7f080017
-int color common_signin_btn_text_light 0x7f080018
+int color common_signin_btn_text_dark 0x7f08001b
+int color common_signin_btn_text_light 0x7f08001c
+int color gray 0x7f080019
+int color transparent 0x7f08001a
 int color wallet_bright_foreground_disabled_holo_light 0x7f08000f
 int color wallet_bright_foreground_holo_dark 0x7f08000a
 int color wallet_bright_foreground_holo_light 0x7f080010
@@ -58,8 +61,9 @@ int color wallet_hint_foreground_holo_dark 0x7f080012
 int color wallet_hint_foreground_holo_light 0x7f080011
 int color wallet_holo_blue_light 0x7f080015
 int color wallet_link_text_light 0x7f080016
-int color wallet_primary_text_holo_light 0x7f080019
-int color wallet_secondary_text_holo_dark 0x7f08001a
+int color wallet_primary_text_holo_light 0x7f08001d
+int color wallet_secondary_text_holo_dark 0x7f08001e
+int color yellow 0x7f080017
 int dimen margin 0x7f0c0000
 int drawable berg 0x7f020000
 int drawable border 0x7f020001
@@ -111,10 +115,11 @@ int id holo_light 0x7f090006
 int id hybrid 0x7f090004
 int id imageView1 0x7f090014
 int id imgIcon 0x7f090021
-int id linearLayout1 0x7f090024
+int id linearLayout1 0x7f090023
+int id linearLayout2 0x7f090025
 int id listViewOrte 0x7f090020
 int id lnlVisit 0x7f090016
-int id map 0x7f090023
+int id map 0x7f090024
 int id match_parent 0x7f09000c
 int id monochrome 0x7f090013
 int id none 0x7f090000
@@ -124,7 +129,7 @@ int id production 0x7f090007
 int id sandbox 0x7f090008
 int id satellite 0x7f090002
 int id selectionDetails 0x7f09000b
-int id spinner1 0x7f090025
+int id spinner1 0x7f090026
 int id strict_sandbox 0x7f090009
 int id terrain 0x7f090003
 int id textView1 0x7f09001c
@@ -142,7 +147,7 @@ int layout activity_start 0x7f030002
 int layout da_item 0x7f030003
 int layout list_fragment 0x7f030004
 int layout list_item 0x7f030005
-int layout mapfragment 0x7f030006
+int layout map_fragment 0x7f030006
 int raw orte 0x7f050000
 int string Button_Map 0x7f070028
 int string Erklaerung 0x7f070026
@@ -185,6 +190,7 @@ int string common_google_play_services_update_title 0x7f070012
 int string common_signin_button_text 0x7f07001d
 int string common_signin_button_text_long 0x7f07001e
 int string wallet_buy_button_place_holder 0x7f07001f
+int string which_places 0x7f070029
 int style AppBaseTheme 0x7f060005
 int style AppTheme 0x7f060006
 int style RobotoButtonStyle 0x7f060008

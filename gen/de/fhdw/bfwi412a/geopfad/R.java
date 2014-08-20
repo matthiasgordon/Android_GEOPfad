@@ -332,6 +332,7 @@ containing a value of this type.
         public static final int zOrderOnTop=0x7f010010;
     }
     public static final class color {
+        public static final int blue=0x7f080018;
         public static final int common_action_bar_splitter=0x7f080009;
         /**  Sign-in Button Colors 
          */
@@ -344,8 +345,10 @@ containing a value of this type.
         public static final int common_signin_btn_light_text_disabled=0x7f080006;
         public static final int common_signin_btn_light_text_focused=0x7f080007;
         public static final int common_signin_btn_light_text_pressed=0x7f080005;
-        public static final int common_signin_btn_text_dark=0x7f080017;
-        public static final int common_signin_btn_text_light=0x7f080018;
+        public static final int common_signin_btn_text_dark=0x7f08001b;
+        public static final int common_signin_btn_text_light=0x7f08001c;
+        public static final int gray=0x7f080019;
+        public static final int transparent=0x7f08001a;
         public static final int wallet_bright_foreground_disabled_holo_light=0x7f08000f;
         /** 
          Wallet colors to support consistent Wallet fragment holo dark UI in client application
@@ -364,8 +367,9 @@ containing a value of this type.
         public static final int wallet_hint_foreground_holo_light=0x7f080011;
         public static final int wallet_holo_blue_light=0x7f080015;
         public static final int wallet_link_text_light=0x7f080016;
-        public static final int wallet_primary_text_holo_light=0x7f080019;
-        public static final int wallet_secondary_text_holo_dark=0x7f08001a;
+        public static final int wallet_primary_text_holo_light=0x7f08001d;
+        public static final int wallet_secondary_text_holo_dark=0x7f08001e;
+        public static final int yellow=0x7f080017;
     }
     public static final class dimen {
         public static final int margin=0x7f0c0000;
@@ -423,10 +427,11 @@ containing a value of this type.
         public static final int hybrid=0x7f090004;
         public static final int imageView1=0x7f090014;
         public static final int imgIcon=0x7f090021;
-        public static final int linearLayout1=0x7f090024;
+        public static final int linearLayout1=0x7f090023;
+        public static final int linearLayout2=0x7f090025;
         public static final int listViewOrte=0x7f090020;
         public static final int lnlVisit=0x7f090016;
-        public static final int map=0x7f090023;
+        public static final int map=0x7f090024;
         public static final int match_parent=0x7f09000c;
         public static final int monochrome=0x7f090013;
         public static final int none=0x7f090000;
@@ -436,7 +441,7 @@ containing a value of this type.
         public static final int sandbox=0x7f090008;
         public static final int satellite=0x7f090002;
         public static final int selectionDetails=0x7f09000b;
-        public static final int spinner1=0x7f090025;
+        public static final int spinner1=0x7f090026;
         public static final int strict_sandbox=0x7f090009;
         public static final int terrain=0x7f090003;
         public static final int textView1=0x7f09001c;
@@ -458,7 +463,7 @@ containing a value of this type.
         public static final int da_item=0x7f030003;
         public static final int list_fragment=0x7f030004;
         public static final int list_item=0x7f030005;
-        public static final int mapfragment=0x7f030006;
+        public static final int map_fragment=0x7f030006;
     }
     public static final class raw {
         public static final int orte=0x7f050000;
@@ -572,6 +577,7 @@ containing a value of this type.
          available or up-to-date 
          */
         public static final int wallet_buy_button_place_holder=0x7f07001f;
+        public static final int which_places=0x7f070029;
     }
     public static final class style {
         /** 

@@ -15,4 +15,5 @@
     <string name="Erklaerung">Diese App bietet ihnen alle möglichen Infos rund um den Geopfad. Dabei handelt es sich um einen unter Geologen weltbekannten Rundweg durch Bergisch Gladbach. Auf dem Weg findet man zahlreiche geologisch wertvolle Funde, die eine Geschichte aus vergangenen Zeiten erzählen.</string>
     <string name="Wetter">Hier das aktuelle Wetter in Bergisch Gladbach:</string>
     <string name="Button_Map">Zur Orteübersicht</string>
+    <string name="which_places">Welche Orte sollen angezeigt werden?</string>
 </resources>
