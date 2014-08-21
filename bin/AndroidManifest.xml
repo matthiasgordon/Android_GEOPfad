@@ -62,6 +62,15 @@
             android:parentActivityName="de.fhdw.bfwi412a.geopfad.ActivityMain" >
         </activity>
         
+                <activity
+            android:name=".AddLocation"
+            android:parentActivityName="de.fhdw.bfwi412a.geopfad.ActivityMain"  >
+        </activity>
+        
+        <activity
+            android:name=".FileChooser"
+            android:parentActivityName="de.fhdw.bfwi412a.geopfad.AddLocation"  >
+        </activity>
     </application>
 
 </manifest>
