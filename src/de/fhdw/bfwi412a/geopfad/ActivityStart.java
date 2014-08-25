@@ -1,6 +1,7 @@
 package de.fhdw.bfwi412a.geopfad;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 public class ActivityStart extends Activity {
@@ -15,6 +16,7 @@ public class ActivityStart extends Activity {
 		initGUI();
 		initApplicationLogic();
 		initEventToListenerMapping();	
+		startService(new Intent(this, ServiceNotifyDistance.class));
 	}
 
 	private void initData() {

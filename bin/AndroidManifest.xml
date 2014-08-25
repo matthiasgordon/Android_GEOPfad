@@ -71,6 +71,8 @@
             android:name=".FileChooser"
             android:parentActivityName="de.fhdw.bfwi412a.geopfad.AddLocation"  >
         </activity>
+        
+        <service android:name=".ServiceNotifyDistance"></service>
     </application>
 
 </manifest>
