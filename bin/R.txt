@@ -155,10 +155,12 @@ int bool abc_config_actionMenuItemAllCaps 0x7f0c0005
 int bool abc_config_allowActionMenuItemTextWithIcon 0x7f0c0004
 int bool abc_config_showMenuShortcutsWhenKeyboardPresent 0x7f0c0003
 int bool abc_split_action_bar_is_narrow 0x7f0c0002
-int color abc_search_url_text_holo 0x7f09001e
+int color abc_search_url_text_holo 0x7f090020
 int color abc_search_url_text_normal 0x7f090017
 int color abc_search_url_text_pressed 0x7f090019
 int color abc_search_url_text_selected 0x7f090018
+int color actionbar 0x7f09001f
+int color background 0x7f09001e
 int color blue 0x7f09001b
 int color common_action_bar_splitter 0x7f090009
 int color common_signin_btn_dark_text_default 0x7f090000
@@ -170,8 +172,8 @@ int color common_signin_btn_light_text_default 0x7f090004
 int color common_signin_btn_light_text_disabled 0x7f090006
 int color common_signin_btn_light_text_focused 0x7f090007
 int color common_signin_btn_light_text_pressed 0x7f090005
-int color common_signin_btn_text_dark 0x7f09001f
-int color common_signin_btn_text_light 0x7f090020
+int color common_signin_btn_text_dark 0x7f090021
+int color common_signin_btn_text_light 0x7f090022
 int color gray 0x7f09001c
 int color transparent 0x7f09001d
 int color wallet_bright_foreground_disabled_holo_light 0x7f09000f
@@ -187,8 +189,8 @@ int color wallet_hint_foreground_holo_dark 0x7f090012
 int color wallet_hint_foreground_holo_light 0x7f090011
 int color wallet_holo_blue_light 0x7f090015
 int color wallet_link_text_light 0x7f090016
-int color wallet_primary_text_holo_light 0x7f090021
-int color wallet_secondary_text_holo_dark 0x7f090022
+int color wallet_primary_text_holo_light 0x7f090023
+int color wallet_secondary_text_holo_dark 0x7f090024
 int color yellow 0x7f09001a
 int dimen abc_action_bar_default_height 0x7f0d0002
 int dimen abc_action_bar_icon_vertical_padding 0x7f0d0003

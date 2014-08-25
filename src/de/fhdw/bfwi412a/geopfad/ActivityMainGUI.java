@@ -11,16 +11,17 @@ import android.support.v4.view.ViewPager;
 public class ActivityMainGUI implements TabListener {
 
 	ViewPager viewPager;
-	final ActionBar actionBar;
+	final ActionBar mActionBar;
 	
 	public ActivityMainGUI (ActivityMain act)
 	{
 		viewPager=(ViewPager) act.findViewById(R.id.pager);
 		
-		actionBar = act.getActionBar();
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-		actionBar.setStackedBackgroundDrawable(new ColorDrawable(Color.rgb(9, 121, 187)));
-		addTabs(actionBar);
+		mActionBar = act.getActionBar();
+		mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+		mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0A122A")));
+		mActionBar.setStackedBackgroundDrawable(new ColorDrawable(Color.rgb(9, 121, 187)));
+		addTabs(mActionBar);
 	}
 
 	public ViewPager getViewPager() {
@@ -28,7 +29,7 @@ public class ActivityMainGUI implements TabListener {
 	}
 	
 	public ActionBar getActionBar() {
-		return actionBar;
+		return mActionBar;
 	}
 
 	private void addTabs (ActionBar actionBar) {

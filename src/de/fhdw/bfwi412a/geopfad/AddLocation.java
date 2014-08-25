@@ -2,14 +2,10 @@ package de.fhdw.bfwi412a.geopfad;
 
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.StringReader;
 import java.io.StringWriter;
-import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -24,13 +20,13 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-import org.xmlpull.v1.XmlPullParserFactory;
 import org.xmlpull.v1.XmlSerializer;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Xml;
@@ -38,7 +34,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class AddLocation extends Activity {
@@ -46,13 +41,12 @@ public class AddLocation extends Activity {
 
 		static final int IMAGE_URL = 100;
 		static final File ORTE_XML = new File(Environment.getExternalStorageDirectory().getPath() + "/orte.xml");
+		ActionBar mActionBar;
 		
 		@Override
 		protected void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.add_location);
-			
-			
 			
 			final String xmlFile = "neueOrte";
 			Button btnAnlegen = (Button)findViewById(R.id.btnAnlegen);
@@ -60,6 +54,8 @@ public class AddLocation extends Activity {
 			final EditText etOrtName = (EditText) findViewById(R.id.etxtName);
 			final EditText etAbout = (EditText) findViewById(R.id.etxtAbout);
 			
+			mActionBar = this.getActionBar();
+			mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0A122A")));
 			
 			
 			btnbildurl.setOnClickListener(new View.OnClickListener() {

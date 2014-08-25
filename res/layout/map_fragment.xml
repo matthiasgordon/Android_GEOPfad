@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MapFragment"
-    android:background="#DECB78" >
+    android:background="@color/background" >
     
 <LinearLayout
 		android:id="@+id/linearLayout1"

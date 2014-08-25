@@ -1,6 +1,8 @@
 package de.fhdw.bfwi412a.geopfad;
 
 import android.app.ActionBar;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,6 +27,7 @@ public class ActivityLocationsGUI {
 		mBtnVisit = (Button) mActLoc.findViewById(R.id.btnVisit);
 		mBtnNavigation = (Button) mActLoc.findViewById(R.id.btnNavigation);
 		mActionBar = act.getActionBar();
+		mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0A122A")));
 		mActionBar.setDisplayHomeAsUpEnabled(true);
 	}
 
