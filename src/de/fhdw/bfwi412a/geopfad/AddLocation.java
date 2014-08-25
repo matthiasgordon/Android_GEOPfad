@@ -45,6 +45,7 @@ public class AddLocation extends Activity {
 
 
 		static final int IMAGE_URL = 100;
+		static final File ORTE_XML = new File(Environment.getExternalStorageDirectory().getPath() + "/orte.xml");
 		
 		@Override
 		protected void onCreate(Bundle savedInstanceState) {
@@ -73,11 +74,7 @@ public class AddLocation extends Activity {
 					filec.getUrl();*/
 					   
 					Intent intent = new Intent(AddLocation.this, FileChooser.class);
-					startActivity(intent);
 					startActivityForResult(intent, IMAGE_URL);
-					
-					
-					
 				}
 			});
 			
@@ -93,15 +90,13 @@ public class AddLocation extends Activity {
 						String about = etAbout.getText().toString();
 					    //FileOutputStream fos = new  FileOutputStream("neueOrte.xml");
 						
-						File ortxml = new File(Environment.getExternalStorageDirectory().getPath() + "/orte.xml");
-						
-						if(ortxml.exists()){
+						if(ORTE_XML.exists()){
 			
 							DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
 					        //Create the documentBuilder
 					        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
 					        //Create the Document  by parsing the file
-					        Document document = documentBuilder.parse(ortxml);
+					        Document document = documentBuilder.parse(ORTE_XML);
 					         //Get the root element of the xml Document;
 					        
 					        System.out.println(document);
@@ -110,7 +105,7 @@ public class AddLocation extends Activity {
 					    	
 					    	org.w3c.dom.Element newOrt = document.createElement("ort");
 					    	
-					    	org.w3c.dom.Element newOrtName = document.createElement("ortname");
+					    	org.w3c.dom.Element newOrtName = document.createElement("name");
 					    	newOrtName.appendChild(document.createTextNode(ortName));
 					    	newOrt.appendChild(newOrtName);
 					    	
@@ -124,22 +119,22 @@ public class AddLocation extends Activity {
 					    	Transformer transformer = factory.newTransformer();
 
 					    	DOMSource source = new DOMSource(document);
-					    	StreamResult result = new StreamResult(ortxml);
+					    	StreamResult result = new StreamResult(ORTE_XML);
 					    	transformer.transform(source, result);
 				
 						}
 						
 					    else {
-					    	 FileOutputStream fileos= new FileOutputStream(ortxml);//getApplicationContext().openFileOutput(xmlFile, Context.MODE_PRIVATE);
+					    	 FileOutputStream fileos= new FileOutputStream(ORTE_XML);//getApplicationContext().openFileOutput(xmlFile, Context.MODE_PRIVATE);
 							    XmlSerializer xmlSerializer = Xml.newSerializer();              
 							    StringWriter writer = new StringWriter();
 							    xmlSerializer.setOutput(writer);
 							    xmlSerializer.startDocument("UTF-8", true);
 							    xmlSerializer.startTag(null, "orte");
 							    xmlSerializer.startTag(null, "ort");
-							    xmlSerializer.startTag(null, "ortname");
+							    xmlSerializer.startTag(null, "name");
 							    xmlSerializer.text(ortName);
-							    xmlSerializer.endTag(null, "ortname");
+							    xmlSerializer.endTag(null, "name");
 							    xmlSerializer.startTag(null,"about");
 							    xmlSerializer.text(about);
 							    xmlSerializer.endTag(null, "about");             
@@ -182,80 +177,9 @@ public class AddLocation extends Activity {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-					
-					
-					ArrayList<String> userData = new ArrayList<String>();
-					String data = null;
-					
-					try {
-					  FileInputStream  fis = new FileInputStream(Environment.getExternalStorageDirectory().getPath() + "/orte.xml");
-					   InputStreamReader isr = new InputStreamReader(fis);
-					   char[] inputBuffer = new char[fis.available()]; 
-					    isr.read(inputBuffer);
-					    data = new String(inputBuffer);
-					    isr.close();
-					    fis.close();
-					}
-					catch (FileNotFoundException e3) {
-					    // TODO Auto-generated catch block
-					    e3.printStackTrace();
-					}
-					catch (IOException e) {
-					    // TODO Auto-generated catch block
-					    e.printStackTrace();
-					}
-					
-					XmlPullParserFactory factory = null;
-					XmlPullParser xpp = null;
-					int eventType = 0;
-					
-					try {
-						factory = XmlPullParserFactory.newInstance();
-						factory.setNamespaceAware(true);
-					    xpp = factory.newPullParser();
-					    xpp.setInput(new StringReader(data));
-					    eventType = xpp.getEventType();
-					}
-					catch (XmlPullParserException e) {
-					    // TODO Auto-generated catch block
-					    e.printStackTrace();
-					}
-					
-					
-					while (eventType != XmlPullParser.END_DOCUMENT){
-						
-					    if (eventType == XmlPullParser.START_DOCUMENT) {
-					        System.out.println("Start document");
-					    }
-					    else if (eventType == XmlPullParser.START_TAG) {
-					        System.out.println("Start tag "+xpp.getName());
-					    }
-					    else if (eventType == XmlPullParser.END_TAG) {
-					        System.out.println("End tag "+xpp.getName());
-					    }
-					    else if(eventType == XmlPullParser.TEXT) {
-					        userData.add(xpp.getText());
-					    }
-					    
-					    try {
-					        eventType = xpp.next();
-					    }
-					    catch (XmlPullParserException e) {
-					        // TODO Auto-generated catch block
-					        e.printStackTrace();
-					    }
-					    catch (IOException e) {
-					        // TODO Auto-generated catch block
-					        e.printStackTrace();
-					    }
-					}
-					
-					TextView ortName = (TextView) findViewById(R.id.txtName);
-							ortName.setText(userData.get(0));
-							
-					TextView about = (TextView) findViewById(R.id.txtAbout);
-							about.setText(userData.get(1));
+				finish();
 				}
+				
 			});	
 		}	
 		
@@ -271,4 +195,12 @@ public class AddLocation extends Activity {
 		    }
 		  }
 		} 
+		
+		@Override
+		public void finish() {
+		  // Prepare data intent 
+		  // Activity finished ok, return the data
+		  setResult(RESULT_OK);
+		  super.finish();
+		}
 }

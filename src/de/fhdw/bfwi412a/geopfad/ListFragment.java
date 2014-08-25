@@ -10,9 +10,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView.FindListener;
 
 public class ListFragment extends Fragment {
 	
+	static final int requestCode = 100;
+	
+
 	ListFragmentData mData;
 	ListFragmentGUI mGUI;
 	ListFragmentApplicationLogic mAppLogic;
@@ -51,7 +55,7 @@ public class ListFragment extends Fragment {
 
 	public void addLocation() {
 		Intent intent = new Intent(getActivity(), AddLocation.class);
-		startActivity(intent);
+		startActivityForResult(intent, requestCode);
 	}
 	
 	@Override
@@ -71,5 +75,13 @@ public class ListFragment extends Fragment {
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
+	}
+	
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		 if (resultCode == 0 && requestCode == ListFragment.requestCode) {
+			
+		 }
+		
 	}
 }

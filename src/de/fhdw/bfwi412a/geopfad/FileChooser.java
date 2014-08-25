@@ -72,8 +72,6 @@ public class FileChooser extends ListActivity {
 	        else
 	        {
 	            onFileClick(o);
-	            finish();
-	            super.onBackPressed();
 	        }
 	        
 	    }
