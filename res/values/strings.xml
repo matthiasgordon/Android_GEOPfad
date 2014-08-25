@@ -17,4 +17,6 @@
     <string name="Button_Map">Zur Orteübersicht</string>
     <string name="which_places">Welche Orte sollen angezeigt werden?</string>
     <string name="add_location">Add Location</string>
+    <string name="empty_listview">Keine Orte gefunden.</string>
+    <string name="search_actionbar">Suchen</string>    
 </resources>

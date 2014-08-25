@@ -11,6 +11,14 @@ public class Ort {
 	private double longitude;
 	private String visitKey;
 	
+	public Ort(){
+		
+	}
+	
+	public Ort(String Errormessage){
+		name = Errormessage;
+	}
+	
 	public String getName() {
 		return name;
 	}
