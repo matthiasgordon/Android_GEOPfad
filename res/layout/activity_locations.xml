@@ -11,13 +11,77 @@
 	        android:gravity="center"
 	        android:orientation="vertical" >
 
-		    <ImageView
+		  
+		// HorizontalScrollview
+		<HorizontalScrollView 
+		    android:id="@+id/HorizontalScrollView01"
+			android:layout_height="match_parent" 
+			android:layout_width="wrap_content">
+ 
+			
+		<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+	        
+	        <ImageView
 		        android:adjustViewBounds="true"
 		        android:id="@+id/imageView1"
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:src="@drawable/berg" />
+	        
+	        <ImageView
+		        android:adjustViewBounds="true"
+		        android:id="@+id/imageView2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/berg"/>
+	        
+	        <ImageView
+		        android:adjustViewBounds="true"
+		        android:id="@+id/imageView3"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/berg"/>
+	        
+	        <ImageView
+		        android:adjustViewBounds="true"
+		        android:id="@+id/imageView4"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/berg"/>
+	       </LinearLayout>
+		</HorizontalScrollView>
+	
+<RelativeLayout 
+   android:layout_width="match_parent" 
+    android:layout_height="match_parent"> 
+    
+    <ImageSwitcher android:id="@+id/switcher"
+        android:background="#55000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        
+    />
+    <Gallery android:id="@+id/gallery"
+        
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        
+        
+        android:gravity="center_vertical"
+        android:spacing="16dp"
+    />  
 
+</RelativeLayout>
+
+	        
 		    <TextView
 		        android:id="@+id/textView2"
 		        android:layout_width="match_parent"
