@@ -35,13 +35,13 @@
        android:id="@+id/btnbildurl"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="durchsuchen"/>
+       android:background="@drawable/button_folder"/>
    
    <Button 
        android:id="@+id/btnAnlegen"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="anlegen"/>
+       android:background="@drawable/button_savelocation" />
       
    <TextView 
        android:id="@+id/txtName"
