@@ -13,6 +13,8 @@ public class ActivityLocationsData {
 	String mAbout;
 	double mLatitude;
 	double mLongitude;
+	double mLiveLatitude;
+	double mLiveLongitude;
 	final String mVisitKey;
 	private SharedPreferences mVisitStatus;
 
@@ -87,6 +89,14 @@ public class ActivityLocationsData {
 
 	public void setLongitude(double mLongitude) {
 		this.mLongitude = mLongitude;
+	}
+	
+	public double getLiveLaditude() {
+		return mLiveLatitude;
+	}
+
+	public double getLiveLongitude() {
+		return mLiveLongitude;
 	}
 
 	public SharedPreferences getVisitStatus() {

@@ -41,7 +41,7 @@ public class ActivityLocations extends Activity {
 
 	private void initGUI () {
 		setContentView(R.layout.activity_locations);
-		mGUI = new ActivityLocationsGUI(this, this);
+		mGUI = new ActivityLocationsGUI(this, this, mData);
 		mGUI.getActionBar().setTitle(mData.getTitle());
 		mGUI.getImageUrl().setImageResource(this.getResources()
 				.getIdentifier(mData.getImageUrl(), "drawable", this.getPackageName())

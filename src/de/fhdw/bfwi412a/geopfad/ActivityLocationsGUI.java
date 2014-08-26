@@ -9,21 +9,26 @@ import android.widget.TextView;
 
 public class ActivityLocationsGUI {
 	
+	ActivityLocationsApplicationLogic mAppLogic;
 	ActivityLocations mActLoc;
+	ActivityLocationsData mData;
 	TextView mAbout;
 	ImageView mImageUrl;
 	TextView mVisitText;
 	TextView mVisitStatus;
+	TextView mDistance;
 	Button mBtnVisit;
 	Button mBtnNavigation;
 	final ActionBar mActionBar;
 
-	public ActivityLocationsGUI(ActivityLocations actloc, ActivityLocations act) {
+	public ActivityLocationsGUI(ActivityLocations actloc, ActivityLocations act, ActivityLocationsData data) {
 		mActLoc = actloc;
+		mData = data;
 		mAbout = (TextView) mActLoc.findViewById(R.id.textView2);
 		mImageUrl = (ImageView) mActLoc.findViewById(R.id.imageView1);
 		mVisitText = (TextView) mActLoc.findViewById(R.id.txtVisitText);
 		mVisitStatus = (TextView) mActLoc.findViewById(R.id.txtVisitStatus);
+		mDistance = (TextView) mActLoc.findViewById(R.id.txtDistance);
 		mBtnVisit = (Button) mActLoc.findViewById(R.id.btnVisit);
 		mBtnNavigation = (Button) mActLoc.findViewById(R.id.btnNavigation);
 		mActionBar = act.getActionBar();
@@ -55,6 +60,10 @@ public class ActivityLocationsGUI {
 		return mVisitStatus;
 	}
 	
+	public TextView getDistance() {
+		return mDistance;
+	}
+	
 	public Button getBtnVisit(){
 		return mBtnVisit;
 	}
@@ -62,6 +71,5 @@ public class ActivityLocationsGUI {
 	public Button getBtnNavigation() {
 		return mBtnNavigation;
 	}
-	
 	
 }

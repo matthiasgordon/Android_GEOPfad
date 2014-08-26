@@ -1,9 +1,12 @@
 package de.fhdw.bfwi412a.geopfad;
 
+import android.location.Location;
+import android.location.LocationListener;
+import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class ActivityLocationsEventToListenerMapping implements OnClickListener {
+public class ActivityLocationsEventToListenerMapping implements OnClickListener, LocationListener {
 
 	private ActivityLocationsGUI mGUI;
 	private ActivityLocationsApplicationLogic mAppLogic;
@@ -13,6 +16,9 @@ public class ActivityLocationsEventToListenerMapping implements OnClickListener 
 		mAppLogic = appLogic;
 		mGUI.getBtnNavigation().setOnClickListener(this);
 		mGUI.getBtnVisit().setOnClickListener(this);
+		mAppLogic.getLocationManager().requestLocationUpdates(mAppLogic.getmProvider(), 400, 1, this);
+		mAppLogic.setLivePosition();
+		mAppLogic.setDistance();
 	}
 	
 	@Override
@@ -25,6 +31,30 @@ public class ActivityLocationsEventToListenerMapping implements OnClickListener 
 			mAppLogic.changeVisitStatus();
 			break;
 		}
+	}
+
+	@Override
+	public void onLocationChanged(Location location) {
+		mAppLogic.setLivePosition();
+		mAppLogic.setDistance();
+	}
+
+	@Override
+	public void onStatusChanged(String provider, int status, Bundle extras) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onProviderEnabled(String provider) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onProviderDisabled(String provider) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
