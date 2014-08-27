@@ -83,6 +83,8 @@ public class Orte_DOM_Parser {
 				        		//read the title of each entry
 				        		Element title = (Element) entry.getElementsByTagName("name").item(0);
 				        		Element image = (Element) entry.getElementsByTagName("image").item(0);
+				        		Element image2 = (Element) entry.getElementsByTagName("image2").item(0);
+				        		Element image3 = (Element) entry.getElementsByTagName("image3").item(0);
 				        		Element about = (Element) entry.getElementsByTagName("about").item(0);
 				        		Element link = (Element) entry.getElementsByTagName("link").item(0);
 				        		Element latitude = (Element) entry.getElementsByTagName("latitude").item(0);
@@ -95,6 +97,10 @@ public class Orte_DOM_Parser {
 					        	if(image != null){
 					        	String imageName = image.getFirstChild().getNodeValue();
 					        	curOrt.setImgUrl(imageName);
+					        	String imageName2 = image2.getFirstChild().getNodeValue();
+					        	curOrt.setImgUrl2(imageName2);
+					        	String imageName3 = image3.getFirstChild().getNodeValue();
+					        	curOrt.setImgUrl3(imageName3);
 					        	
 					        	curOrt.setAbout(about.getFirstChild().getNodeValue());
 					        	curOrt.setLink(link.getFirstChild().getNodeValue());

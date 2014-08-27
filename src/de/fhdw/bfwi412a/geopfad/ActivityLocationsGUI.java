@@ -14,6 +14,8 @@ public class ActivityLocationsGUI {
 	ActivityLocationsData mData;
 	TextView mAbout;
 	ImageView mImageUrl;
+	ImageView mImageUrl2;
+	ImageView mImageUrl3;
 	TextView mVisitText;
 	TextView mVisitStatus;
 	TextView mDistance;
@@ -26,6 +28,8 @@ public class ActivityLocationsGUI {
 		mData = data;
 		mAbout = (TextView) mActLoc.findViewById(R.id.textView2);
 		mImageUrl = (ImageView) mActLoc.findViewById(R.id.imageView1);
+		mImageUrl2 = (ImageView) mActLoc.findViewById(R.id.imageView2);
+		mImageUrl3 = (ImageView) mActLoc.findViewById(R.id.imageView3);
 		mVisitText = (TextView) mActLoc.findViewById(R.id.txtVisitText);
 		mVisitStatus = (TextView) mActLoc.findViewById(R.id.txtVisitStatus);
 		mDistance = (TextView) mActLoc.findViewById(R.id.txtDistance);
@@ -50,6 +54,13 @@ public class ActivityLocationsGUI {
 
 	public ImageView getImageUrl() {
 		return mImageUrl;
+	}
+	public ImageView getImageUrl2() {
+		return mImageUrl2;
+	}
+
+	public ImageView getImageUrl3() {
+		return mImageUrl3;
 	}
 	
 	public TextView getVisitText() {

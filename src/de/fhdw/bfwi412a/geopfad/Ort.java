@@ -5,6 +5,8 @@ package de.fhdw.bfwi412a.geopfad;
 public class Ort {
 	private String name;
 	private String imgUrl;
+	private String imgUrl2;
+	private String imgUrl3;
 	private String about;
 	private String link;	
 	private double latitude;
@@ -30,6 +32,21 @@ public class Ort {
 	}
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;
+	}
+	public String getImgUrl2() {
+		return imgUrl2;
+	}
+
+	public void setImgUrl2(String imgUrl2) {
+		this.imgUrl2 = imgUrl2;
+	}
+
+	public String getImgUrl3() {
+		return imgUrl3;
+	}
+
+	public void setImgUrl3(String imgUrl3) {
+		this.imgUrl3 = imgUrl3;
 	}
 	public String getAbout() {
 		return about;

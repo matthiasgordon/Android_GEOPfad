@@ -10,6 +10,8 @@ public class ActivityLocationsData {
 	Bundle mOrtInfo;
 	String mTitle;
 	String mImageUrl;
+	String mImageUrl2;
+	String mImageUrl3;
 	String mAbout;
 	double mLatitude;
 	double mLongitude;
@@ -24,6 +26,8 @@ public class ActivityLocationsData {
 		mOrtInfo = mActivity.getIntent().getExtras();
 		mTitle = mOrtInfo.getString("Ortname");
 		mImageUrl = mOrtInfo.getString("imageUrl");
+		mImageUrl2 = mOrtInfo.getString("imageUrl2");
+		mImageUrl3 = mOrtInfo.getString("imageUrl3");
 		mAbout = mOrtInfo.getString("about");
 		mVisitKey = mOrtInfo.getString("visitKey");
 		mLatitude = mOrtInfo.getDouble("latitude");
@@ -61,6 +65,21 @@ public class ActivityLocationsData {
 
 	public void setImageUrl(String mImageUrl) {
 		this.mImageUrl = mImageUrl;
+	}
+	public String getImageUrl2() {
+		return mImageUrl2;
+	}
+
+	public void setImageUrl2(String mImageUrl2) {
+		this.mImageUrl2 = mImageUrl2;
+	}
+
+	public String getImageUrl3() {
+		return mImageUrl3;
+	}
+
+	public void setImageUrl3(String mImageUrl3) {
+		this.mImageUrl3 = mImageUrl3;
 	}
 
 	public String getAbout() {

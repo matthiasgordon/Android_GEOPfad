@@ -24,6 +24,8 @@ public class MapFragmentApplicationLogic {
 				Intent intent = new Intent(mData.getActivity(), ActivityLocations.class);
 				intent.putExtra("Ortname", curOrt.getName());
 				intent.putExtra("imageUrl", curOrt.getImgUrl());
+				intent.putExtra("imageUrl2", curOrt.getImgUrl2());
+				intent.putExtra("imageUrl3", curOrt.getImgUrl3());
 				intent.putExtra("about", curOrt.getAbout());
 				intent.putExtra("latitude", curOrt.getLat());
 				intent.putExtra("longitude", curOrt.getLng());

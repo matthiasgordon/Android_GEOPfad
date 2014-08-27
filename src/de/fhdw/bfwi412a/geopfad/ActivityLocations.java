@@ -31,6 +31,12 @@ public class ActivityLocations extends Activity {
 		mGUI.getImageUrl().setImageResource(this.getResources()
 				.getIdentifier(mData.getImageUrl(), "drawable", this.getPackageName())
 				);
+		mGUI.getImageUrl2().setImageResource(this.getResources()
+				.getIdentifier(mData.getImageUrl2(), "drawable", this.getPackageName())
+				);
+		mGUI.getImageUrl3().setImageResource(this.getResources()
+				.getIdentifier(mData.getImageUrl3(), "drawable", this.getPackageName())
+				);
 		mGUI.getAbout().setText(mData.getAbout());
 		mGUI.getVisitStatus().setText(mData.getVisitStatus()
 				.getString(mData.getVisitKey(), "Nein"));
