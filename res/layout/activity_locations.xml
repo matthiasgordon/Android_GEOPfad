@@ -19,30 +19,28 @@
 							android:layout_width="match_parent"
 							android:layout_height="wrap_content"
 							android:layout_weight="1">
+							
 							<ImageView
 							android:adjustViewBounds="true"
 							android:id="@+id/imageView1"
 							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:src="@drawable/berg" />
+							android:layout_height="wrap_content" />
+							
+							
 							<ImageView
 							android:adjustViewBounds="true"
 							android:id="@+id/imageView2"
 							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:src="@drawable/berg"/>
+							android:layout_height="wrap_content" />
+							
 							<ImageView
 							android:adjustViewBounds="true"
 							android:id="@+id/imageView3"
 							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:src="@drawable/berg"/>
-							<ImageView
-							android:adjustViewBounds="true"
-							android:id="@+id/imageView4"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:src="@drawable/berg"/>
+							android:layout_height="wrap_content" />
+							
+							
+							
 				</LinearLayout>
 					</HorizontalScrollView>
 
@@ -99,7 +97,7 @@
 			android:id="@+id/txtDescription"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="Luftlinie zum Ort:"
+			android:text="Abstand zum Ort:"
 			android:textSize="15sp" />
 			
 			<TextView
