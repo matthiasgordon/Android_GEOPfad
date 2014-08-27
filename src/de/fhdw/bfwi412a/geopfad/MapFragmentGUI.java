@@ -3,6 +3,8 @@ package de.fhdw.bfwi412a.geopfad;
 import java.util.List;
 
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.support.annotation.ColorRes;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -14,6 +16,8 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
+
+import de.fhdw.bfwi412a.geopfad.R.color;
 
 public class MapFragmentGUI {
 	
@@ -48,10 +52,12 @@ public class MapFragmentGUI {
 			mMap.clear();
 			mMap.addPolyline(new PolylineOptions()
 			.addAll(mRouteCoordinates)
-			.width(8));
+			.width(6))
+			.setColor(Color.argb(99, 255, 255, 0));
 			setupMarkers(mMarkerId, mOrte, mVisitStatus);
 			mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(50.99876752, 7.14546919), 14));
 			mMap.setMyLocationEnabled(true);
+			mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
 		}
 	}
 	
