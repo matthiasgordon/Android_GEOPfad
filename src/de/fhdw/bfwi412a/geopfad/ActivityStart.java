@@ -18,6 +18,12 @@ public class ActivityStart extends Activity {
 		initEventToListenerMapping();	
 		startService(new Intent(this, ServiceNotifyDistance.class));
 	}
+	
+	@Override
+	protected void onDestroy() {
+		stopService(new Intent(this, ServiceNotifyDistance.class));
+		super.onDestroy();
+	}
 
 	private void initData() {
 		mData = new ActivityStartData(this);

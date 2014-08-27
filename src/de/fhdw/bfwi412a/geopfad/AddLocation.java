@@ -55,7 +55,8 @@ public class AddLocation extends Activity {
 			final EditText etAbout = (EditText) findViewById(R.id.etxtAbout);
 			
 			mActionBar = this.getActionBar();
-			mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0A122A")));
+			mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0979BB")));
+			mActionBar.setIcon(R.drawable.actionbar_icon_white);
 			
 			
 			btnbildurl.setOnClickListener(new View.OnClickListener() {

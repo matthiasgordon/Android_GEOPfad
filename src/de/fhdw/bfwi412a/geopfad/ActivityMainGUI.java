@@ -19,8 +19,9 @@ public class ActivityMainGUI implements TabListener {
 		
 		mActionBar = act.getActionBar();
 		mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-		mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0A122A")));
-		mActionBar.setStackedBackgroundDrawable(new ColorDrawable(Color.rgb(9, 121, 187)));
+		mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0979BB")));
+		mActionBar.setStackedBackgroundDrawable(new ColorDrawable(Color.parseColor("#E6E6E6")));
+		mActionBar.setIcon(R.drawable.actionbar_icon_white);
 		addTabs(mActionBar);
 	}
 

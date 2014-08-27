@@ -12,7 +12,8 @@ public class ActivityStartGUI {
 	
 	public ActivityStartGUI(ActivityStart act) {
 		mActionBar = act.getActionBar();
-		mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0A122A")));
+		mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0979BB")));
+		mActionBar.setIcon(R.drawable.actionbar_icon_white);
 		mToActivityMainButton = (Button) act.findViewById(R.id.ToActivityMainButton);
 	}
 

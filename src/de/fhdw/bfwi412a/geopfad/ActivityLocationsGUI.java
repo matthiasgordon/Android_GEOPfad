@@ -36,7 +36,8 @@ public class ActivityLocationsGUI {
 		mBtnVisit = (Button) mActLoc.findViewById(R.id.btnVisit);
 		mBtnNavigation = (Button) mActLoc.findViewById(R.id.btnNavigation);
 		mActionBar = act.getActionBar();
-		mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0A122A")));
+		mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0979BB")));
+		mActionBar.setIcon(R.drawable.actionbar_icon_white);
 		mActionBar.setDisplayHomeAsUpEnabled(true);
 	}
 
