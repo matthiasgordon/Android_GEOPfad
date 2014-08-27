@@ -13,19 +13,21 @@ import android.widget.Spinner;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-import de.fhdw.bfwi412a.geopfad.R.color;
-
 public class MapFragmentGUI {
 	
+	BitmapDescriptor mMarkerIcon;
 	SupportMapFragment mFragment;
 	GoogleMap mMap;
 	Spinner mSpinner;
 	
 	MapFragmentGUI(MapFragment mfrag, View view){
+		mMarkerIcon = BitmapDescriptorFactory.fromResource(R.drawable.reisszwecke_klein);
 		FragmentManager mFragmentManager = mfrag.getActivity().getSupportFragmentManager();
 		if(mFragment == null){
 			mFragment = (SupportMapFragment) mFragmentManager.findFragmentById(R.id.map);
@@ -57,7 +59,8 @@ public class MapFragmentGUI {
 			setupMarkers(mMarkerId, mOrte, mVisitStatus);
 			mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(50.99876752, 7.14546919), 14));
 			mMap.setMyLocationEnabled(true);
-			mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+//			mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+			
 		}
 	}
 	
@@ -67,14 +70,16 @@ public class MapFragmentGUI {
 		case 0:
 			for (Ort curOrt : mOrte){
 				mMap.addMarker(new MarkerOptions().position(new LatLng(curOrt.getLat(), curOrt.getLng()))
-						.title(curOrt.getName()));	
+						.title(curOrt.getName()))
+						.setIcon(mMarkerIcon);	
 			}
 			break;
 		case 1:
 			for (Ort curOrt : mOrte){
 				if(mVisitStatus.getString(curOrt.getVisitKey(), "nein").equals("ja")){
 				mMap.addMarker(new MarkerOptions().position(new LatLng(curOrt.getLat(), curOrt.getLng()))
-						.title(curOrt.getName()));
+						.title(curOrt.getName()))
+						.setIcon(mMarkerIcon);
 				}
 			}
 			break;
@@ -82,7 +87,8 @@ public class MapFragmentGUI {
 			for (Ort curOrt : mOrte){
 				if(mVisitStatus.getString(curOrt.getVisitKey(), "nein").equals("nein")){
 				mMap.addMarker(new MarkerOptions().position(new LatLng(curOrt.getLat(), curOrt.getLng()))
-						.title(curOrt.getName()));
+						.title(curOrt.getName()))
+						.setIcon(mMarkerIcon);
 				}
 			}
 			break;
