@@ -7,7 +7,6 @@ import android.os.Bundle;
 public class ActivityLocations extends Activity {
 
 	Context context = ActivityLocations.this;
-	public static final String PREFS_NAME = "MYPrefernceFile";
 	ActivityLocationsData mData;
 	ActivityLocationsGUI mGUI;
 	ActivityLocationsApplicationLogic mAppLogic;
@@ -19,20 +18,6 @@ public class ActivityLocations extends Activity {
 		initGUI();
 		initApplicationLogic();
 		initEventToListenerMapping();
-
-//		Button btnVisit = (Button) findViewById(R.id.btnVisit);
-//		btnVisit.setOnClickListener(new View.OnClickListener() {
-//			
-//			@Override
-//			public void onClick(View v) {
-//				// TODO Auto-generated method stub
-//				SharedPreferences visitStatus = getSharedPreferences(PREFS_NAME, 0);
-//				SharedPreferences.Editor editor = visitStatus.edit();
-//				editor.putString(mData.mVisitKey, "ja");
-//				editor.commit();
-//				mGUI.getVisitStatus().setText(visitStatus.getString(mData.mVisitKey, "Nein"));
-//			}
-//		});
 	}
 	
 	private void initData () {

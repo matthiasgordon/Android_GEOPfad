@@ -95,10 +95,19 @@ public class ActivityLocationsData {
 		return mLiveLatitude;
 	}
 
+	public void setLiveLatitude(double mLiveLatitude) {
+		this.mLiveLatitude = mLiveLatitude;
+	}
+
+
 	public double getLiveLongitude() {
 		return mLiveLongitude;
 	}
 
+	public void setLiveLongitude(double mLiveLongitude) {
+		this.mLiveLongitude = mLiveLongitude;
+	}
+	
 	public SharedPreferences getVisitStatus() {
 		return mVisitStatus;
 	}	

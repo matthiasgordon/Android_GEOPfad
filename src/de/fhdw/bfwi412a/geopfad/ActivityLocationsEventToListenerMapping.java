@@ -17,8 +17,10 @@ public class ActivityLocationsEventToListenerMapping implements OnClickListener,
 		mGUI.getBtnNavigation().setOnClickListener(this);
 		mGUI.getBtnVisit().setOnClickListener(this);
 		mAppLogic.getLocationManager().requestLocationUpdates(mAppLogic.getmProvider(), 400, 1, this);
+		if(mAppLogic.isProviderEnabled() == true) {
 		mAppLogic.setLivePosition();
 		mAppLogic.setDistance();
+		}
 	}
 	
 	@Override
