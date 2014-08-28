@@ -38,14 +38,14 @@
     
 		    <Button 
 		       android:id="@+id/btnbildurl"
-		       android:layout_width="80px"
-		       android:layout_height="63px"
+		       android:layout_width="64px"
+		       android:layout_height="56px"
 		       android:background="@drawable/button_folder"/>
 
 		   	<Button
 		   	    android:id="@+id/btnAnlegen"
-		   	    android:layout_width="65px"
-		   	    android:layout_height="63px"
+		   	    android:layout_width="64px"
+		   	    android:layout_height="64px"
 		   	    android:layout_alignParentRight="true"
 		   	    android:layout_alignParentTop="true"
 		   	    android:background="@drawable/button_savelocation" />

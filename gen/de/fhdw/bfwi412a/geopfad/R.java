@@ -1547,7 +1547,7 @@ containing a value of this type.
         public static final int thumb_station14bild4=0x7f0200c8;
         public static final int thumb_station15bild4=0x7f0200c9;
         public static final int thumb_station16bild5=0x7f0200ca;
-        public static final int thumb_station17bild5=0x7f0200cb;
+        public static final int thumb_station17bild6=0x7f0200cb;
         public static final int thumb_station1bild4=0x7f0200cc;
         public static final int thumb_station2bild2=0x7f0200cd;
         public static final int thumb_station3bild3=0x7f0200ce;

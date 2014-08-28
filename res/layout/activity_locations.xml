@@ -112,8 +112,8 @@
 			</TableRow>
 			<Button
 			android:id="@+id/btnNavigation"
-			android:layout_width="150px"
-			android:layout_height="94px"
+			android:layout_width="100px"
+			android:layout_height="104px"
 			android:text="@string/NavigationLocation"
 			android:textSize="25sp"
 			android:background="@drawable/button_navigation" />
