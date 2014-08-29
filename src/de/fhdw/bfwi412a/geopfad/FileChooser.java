@@ -19,11 +19,10 @@ public class FileChooser extends ListActivity {
 	    
 		//create a current directory variable
 		private File currentDir;
-		
 	    private FileChooserAdapter adapter;
 	    private String url;
 	   
-	    /** Called when the activity is first created. */
+	    // Called when the activity is first created
 	    @Override
 	    public void onCreate(Bundle savedInstanceState) {
 	    	
