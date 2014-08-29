@@ -36,7 +36,7 @@ public class FileChooser extends ListActivity {
 	    //The Method work like this:
 	    //get an array of all the files and dirs in the current we are in 
 	    //create 2 ListArrays. One for folders and one for files.
-	    //sort files and dirs into the appropriate ListArray.
+	    //sort files and directories into the appropriate ListArray.
 	    //sort the ListArrays alphabetically and pass to one ListArray.
 	    //pass this ListArray to our custom ArrayAdapter
 	    void fill(File f)
